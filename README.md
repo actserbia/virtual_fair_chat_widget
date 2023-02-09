@@ -1,6 +1,6 @@
 # @papercups-io/chat-widget
 
-> Papercups chat widget
+> Papercups chat widget (ACT)
 
 [![NPM](https://img.shields.io/npm/v/@papercups-io/chat-widget.svg)](https://www.npmjs.com/package/@papercups-io/chat-widget)
 [![Downloads](https://img.shields.io/npm/dm/@papercups-io/chat-widget.svg)](https://www.npmjs.com/package/@papercups-io/chat-widget)
