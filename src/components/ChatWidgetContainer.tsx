@@ -20,7 +20,7 @@ import getThemeConfig from '../theme';
 import store from '../storage';
 import Logger from '../logger';
 
-const DEFAULT_IFRAME_URL = 'https://chat-widget.papercups.io';
+const DEFAULT_IFRAME_URL = 'https://vf-chat-window.fly.dev/';
 
 export type SharedProps = {
   token: string;

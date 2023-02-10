@@ -4,13 +4,13 @@ import {ChatWidget, ChatWindow} from '@papercups-io/chat-widget';
 import {Papercups} from '@papercups-io/browser';
 
 // NB: during development, replace this with valid account/inbox IDs from your dev db
-const TEST_ACCOUNT_ID = '2ebbad4c-b162-4ed2-aff5-eaf9ebf469a5';
-const TEST_INBOX_ID = 'eab9c66e-ea8a-46f7-9565-3927ec55e20d';
+const TEST_ACCOUNT_ID = 'a2f453a6-5d7b-48c1-930e-fbc4cf58a710';
+const TEST_INBOX_ID = 'd21787f7-485b-48ff-8407-ec7299a8df7e';
 
 const cups = Papercups.init({
   accountId: TEST_ACCOUNT_ID,
   inboxId: TEST_INBOX_ID,
-  baseUrl: 'http://localhost:4000',
+  baseUrl: 'https://vf-dev.fly.dev',
 });
 
 type Props = {disco?: boolean; displayChatWindow?: boolean};
@@ -100,8 +100,8 @@ const App = ({disco, displayChatWindow}: Props) => {
             }}
             // NB: we override these values during development -- note that the
             // API runs on port 4000 by default, and the iframe on 8080
-            baseUrl='http://localhost:4000'
-            iframeUrlOverride='http://localhost:8080'
+            baseUrl='https://vf-dev.fly.dev'
+            iframeUrlOverride='https://vf-chat-window.fly.dev/'
             requireEmailUpfront
             showAgentAvailability
             onChatLoaded={() => console.log('Chat loaded!')}
@@ -135,8 +135,8 @@ const App = ({disco, displayChatWindow}: Props) => {
           // customer={customer}
           // NB: we override these values during development -- note that the
           // API runs on port 4000 by default, and the iframe on 8080
-          baseUrl='http://localhost:4000'
-          iframeUrlOverride='http://localhost:8080'
+          baseUrl='https://vf-dev.fly.dev'
+          iframeUrlOverride='https://vf-chat-window.fly.dev/'
           requireEmailUpfront={!customer && !customer?.email}
           showAgentAvailability
           hideOutsideWorkingHours={false}
