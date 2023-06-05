@@ -22,7 +22,7 @@ class ErrorBoundary extends React.Component<Props, State> {
       return null;
     }
 
-    return this.props.children;
+    return <>{this.props.children}</>;
   }
 }
 
