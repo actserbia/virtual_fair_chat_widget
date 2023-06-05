@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 
 type State = {error: any};
 type Props = {};
@@ -22,7 +22,7 @@ class ErrorBoundary extends React.Component<Props, State> {
       return null;
     }
 
-    return this.props.children;
+    return <Fragment>{this.props.children}</Fragment>;
   }
 }
 
